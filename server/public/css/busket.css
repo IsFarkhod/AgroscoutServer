@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1E1D1D;
+}
+
+.busket {
+    max-width: 900px;
+    height: auto;
+    margin: 165px auto;
+    padding: 15px;
+    background-color: rgb(42, 41, 41);
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.busket__header{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.busket__img-block {
+    width: 350px;
+    height: 300px;
+    border: 1px solid #fff;
+}
+
+.busket__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.busket__descriptions {
+    width: 100%;
+    height: 100%;
+    padding: 75px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.busket__header {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.busket__title {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.busket__price {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.busket__input {
+    width: 175px;
+    height: 35px;
+    padding: 8px 12px;
+    color: #fff;
+    border: 1px solid #efefef;
+    border-radius: 5px;
+    background-color: rgb(42, 41, 41);
+    outline: none;
+}
+
+.busket__btn-delete {
+    margin: 25px 0;
+    padding: 15px;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    color: #fff;
+    background-color: #1E1D1D;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    transition: 0.3s ease;
+    display: block;
+
+}
+
+.busket__btn-delete:hover {
+    color: #fff;
+    background-color: #02E502;
+    transition: 0.3s ease-in;
+}

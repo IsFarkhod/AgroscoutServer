@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(45, 46, 45);
+}
+
+header, footer{
+    display: none;
+}
+
+.main__block {
+    width: 100%;
+    height: 85vh;
+}
+
+.add-drone {
+    width: 100%;
+    height: 125px;
+    background-color: rgb(45, 46, 45);
+    margin-top: 125px;
+    padding-left: 230px;
+}
+
+.add-drone__block {
+    max-width: 1075px;
+    height: auto;
+    margin: 0 auto;
+    padding: 170px 0;
+}
+
+.add-drone__input-block {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.add-drone__input-box {
+    width: 100%;
+    height: 100%;
+    margin-right: 18px;
+    margin-bottom: 15px;
+}
+
+.add-drone__inputs {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.add-drone__input {
+    width: 200px;
+    height: 55px;
+    padding: 8px;
+    color: #fff;
+    background-color: rgb(42, 41, 41);
+    border: 2px solid #fff;
+    outline: none;
+}
+
+.add-drone__btn {
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    font-size: 20px;
+    background-color: #181818F5;
+    border: 2px solid #fff;
+    display: block;
+    cursor: pointer;
+}
+
+.add-drone__download-btn {
+    width: 250px;
+    height: auto;
+    text-align: center;
+    background-color: #181818F5;
+    display: block;
+    cursor: pointer;
+    ;
+}
+
+/*------------- ALERT MESSAGE -------------*/
+.alert {
+    width: 100%;
+    height: 35px;
+    padding: 35px 0;
+    color: #fff;
+    background-color: rgb(45, 46, 45);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.alert-close {
+    color: #fff;
+    padding: 8px 22px;
+    background-color: rgb(68, 221, 68);
+    outline: none;
+    border: none;
+    font-size: 18px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    display: block;
+}
+
+.alert-title {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}

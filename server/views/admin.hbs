@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRONE</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="../css/add-user.css">
+    <link rel="stylesheet" href="../css/critical.css">
+    <link rel="stylesheet" href="../css/admin.css">
+
+</head>
+<body>
+    <section class="add-user">
+        <div class="general__links-crumbs">
+            <a class="general__link-crumb" href="admin.hbs">Главная</a>
+            <span class="general__slash">/</span>
+            <!--<a class="general__link-crumb" href="/view-drug">Посмотреть препараты</a>
+              <span class="general__slash">/</span>
+            <a class="general__link-crumb" href="/add-drug">Добавить препарат</a>
+            <span class="general__slash">/</span>-->
+            <a class="general__link-crumb" href="/add-drone">Добавить дрон</a>
+        </div>
+    </section>
+
+    <section class="admin-panel">
+        <div class="sidebar">
+            <form action="/admin" method="post" novalidate>
+                <div class="search-block">
+                    <input class="searchDrone" name="search" type="search" placeholder="Начать поиск....">
+                    <img class="imgSearch" src="./assets/icons/search.svg" alt="search.svg">
+                </div>
+                <button class="admin-btn" type="submit">Поиск</button>
+            </form>
+        </div>
+        <div class="main-window">
+            {{{body}}}
+            <table>
+                <thead>
+                    <tr>
+                        <th>Название</th>
+
+                        <th>Брэнд</th>
+
+                        <th>Модель</th>
+
+                        <th>Количество</th>
+
+                        <th>Цена</th>
+                    </tr>
+                </thead>
+                {{#each rows}}
+                <tr>
+                    <td>{{this.titleDrone}}</td>
+
+                    <td>{{this.brand}}</td>
+
+                    <td>{{this.model}}</td>
+
+                    <td>{{this.instock}}</td>
+
+                    <td>{{this.price}}</td>
+                    <td><a style="text-decoration: none; color: #fff;" href="/edit-drone/{{this.id}}">Edit</a></td>
+                    <td><a style="text-decoration: none; color: #fff;" href="/delete-drone/{{this.id}}">Delete</a></td>
+                </tr>
+                {{/each}}
+            </table>
+        </div>
+    </section>
+
+
+</body>
+</html>

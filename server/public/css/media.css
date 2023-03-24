@@ -1,0 +1,496 @@
+@media only screen and (max-width: 1135px) {
+    .container {
+        max-width: 1050px;
+        margin: 0 auto;
+    }
+
+    .main__card-title {
+        margin: 15px 0;
+        font-size: 35px;
+        line-height: 25px;
+    }
+
+    .main__card-subtitle {
+        font-size: 20px;
+    }
+
+    .advantage__row {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .production__card {
+        max-width: 330px;
+        max-height: 615px;
+    }
+
+    .about_company__row,
+    .location__row,
+    .partners__row,
+    .news__row {
+        margin-top: 45px;
+    }
+
+    .news__row {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .news__card {
+        width: 350px;
+        min-height: 581px;
+        padding: 8px;
+    }
+
+    .news__title {
+        font-size: 18px;
+    }
+
+    .news__subtitle {
+        line-height: 25px;
+    }
+
+    /*-------------- ENTOMOPHAGES PAGE --------------*/
+    .help__input {
+        margin-bottom: 12px;
+    }
+
+    .insect__card {
+        display: block;
+    }
+
+    .insect__img-block,
+    .insect__desc {
+        margin: 0 auto;
+    }
+
+    /* .work__card:nth-child(3) {
+        left: 0;
+    }*/
+
+
+    .work__card {
+        position: relative;
+    }
+
+    .work__img-block {
+        display: none;
+    }
+
+    /*-------------- CARTOGRAPHY PAGE -----------------*/
+    main {
+        padding: 175px 25px;
+    }
+
+    .main__img-block {
+        display: none;
+    }
+
+    .main__subtitle {
+        font-size: 18px;
+    }
+
+    .cartography_adv {
+        padding: 175px 25px 0 25px;
+    }
+
+    .cartography_adv__row {
+        justify-content: center;
+    }
+
+    .process {
+        padding: 175px 25px 0 25px;
+    }
+
+    .process__row {
+        display: block;
+    }
+
+    .process__img-block {
+        margin: 0 auto;
+    }
+
+    .process__desc {
+        width: 100%;
+        margin: 22px auto 0 auto;
+    }
+
+    .process__desc-content {
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    .process__desc-content:last-child {
+        width: 600px;
+        margin: 0 auto;
+        left: 105px;
+    }
+
+    .desc__header-line-block {
+        justify-content: center;
+    }
+
+    .process__desc-list {
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .help {
+        padding: 25px;
+    }
+
+    /*-------------- CARTOGRAPHY PAGE END-----------------*/
+}
+
+@media only screen and (max-width: 985px) {
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    /*----------- ENTOMOPHAGES PAGE ----------*/
+
+    /*.work__card:nth-child(2) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: auto;
+    }*/
+
+    .help__img-block {
+        width: 400px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .help__input {
+        margin-right: 25px;
+    }
+
+    .help__middle-block {
+        display: block;
+    }
+
+    .help__btn {
+        margin: 25px auto;
+        display: block;
+    }
+      /*--------------- CONTACTS PAGE -----------*/
+      .contacts__row{
+        display: block;
+    }
+     /*--------------- CONTACTS PAGE END-----------*/
+}
+
+@media only screen and (max-width: 780px) {
+    .container {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .header__logo,
+    .header__social-link,
+    .header__card-right-icon,
+    .burger {
+        width: 45px;
+        height: 45px;
+    }
+
+    .header__card-right-item {
+        margin: 0 7px;
+    }
+
+    .services__content {
+        padding-left: 15px;
+        clip-path: polygon(100% 0, 90% 0.2%, 50% 100%, 0 100%, 0 0);
+    }
+
+    .services__subtitle {
+        margin-right: 300px
+    }
+
+    .about_company__subtitle {
+        font-size: 18px;
+    }
+
+    .location__row {
+        display: block;
+    }
+
+    .location__menu {
+        justify-content: space-around;
+    }
+
+    .partners__row {
+        flex-wrap: wrap;
+    }
+
+    .partners__card {
+        width: 100%;
+        height: 100%;
+        margin: 16px 0;
+    }
+
+    .partners__img-block {
+        margin: 0 auto;
+    }
+
+    .footer__row {
+        justify-content: center;
+    }
+
+    .footer__card {
+        padding: 0 8px;
+    }
+
+    .footer__img-block {
+        width: 45px;
+        height: 45px;
+        margin-right: 8px;
+    }
+
+    .footer__icon {
+        margin-right: 8px;
+    }
+
+    .footer__phone,
+    .footer__label {
+        font-size: 14px;
+    }
+
+    /*------------- ENTOMOPHAGES PAGE ------------*/
+
+    .insect__desc {
+        width: 100%;
+    }
+
+    /*------------- ENTOMOPHAGES PAGE END -------------*/
+
+    /*------------- NEWS PAGE -------------*/
+    .news_block__card-img-block {
+        width: 350px;
+        height: 175px;
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .desc-block__title {
+        margin: 12px 0;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .desc-block__subtitle {
+        margin: 15px 0;
+        font-size: 14px;
+        line-height: 27px;
+    }
+
+    .desc-block__link {
+        font-size: 16px;
+    }
+
+    /*------------- NEWS PAGE END-------------*/
+
+    /*-------------- ABOUTUS PAGE -----------------*/
+    .about-us__command-row {
+        display: block; 
+        flex-wrap: wrap;
+    }
+    .about-us__command-card{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    /*-------------- ABOUTUS PAGE END-----------------*/
+
+    /*--------------- CONTACTS PAGE -----------*/
+    .contacts__row{
+        display: block;
+    }
+     /*--------------- CONTACTS PAGE END-----------*/
+}
+
+@media only screen and (max-width: 650px) {
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .header__phone-block,
+    .header__number {
+        display: none;
+    }
+
+    .main__card-title {
+        font-size: 25px;
+    }
+
+    /*.services__title {
+        font-size: 18px;
+    }*/
+
+    .services__subtitle {
+        font-size: 20px;
+    }
+
+    /*------------- NEWS PAGE -------------*/
+    .news_block__card {
+        width: 100%;
+        display: block;
+    }
+
+    .news_block__card-img-block {
+        height: 280px;
+        margin: 0 auto;
+    }
+
+    .news_block__desc-block {
+        width: 100%;
+    }
+
+    /*------------- NEWS PAGE END-------------*/
+
+}
+
+@media only screen and (max-width: 550px) {
+
+    .container {
+        max-width: 480px;
+        margin: 0 auto;
+    }
+
+    .main__title {
+        font-size: 30px;
+    }
+
+    .services {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+
+    .services__content {
+        width: 100%;
+        height: 350px;
+        text-align: center;
+        clip-path: polygon(100% 0, 100% 100%, 100% 100%, 0 100%, 0 0);
+    }
+
+    .services__title,
+    .services__subtitle {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .services__subtitle {
+        line-height: 35px;
+    }
+
+    .services__btn {
+        margin: 10px auto;
+    }
+
+    .location__item {
+        font-size: 20px;
+    }
+
+    .footer__row {
+        text-align: center;
+        display: block
+    }
+
+    .footer__card {
+        width: auto;
+        height: auto;
+        margin: 8px 0;
+        display: block;
+    }
+
+    .footer__img-block {
+        margin: 0 auto;
+    }
+
+    .footer__phone-block {
+        justify-content: center;
+    }
+
+    .footer__phone,
+    .footer__label {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+
+
+    /*--------- ENTOMOPHAGES PAGE -----------*/
+
+    .work {
+        display: none;
+    }
+
+    /*--------- ENTOMOPHAGES PAGE END-----------*/
+
+    /*------------------- SPRAY PAGE --------------------*/
+    .advantages_spray__row,
+    .defect_spray__row,
+    .how_work__row {
+        display: block;
+    }
+
+    .advantages_spray__card,
+    .defect_spray__card,
+    .how_work__card {
+        margin-bottom: 25px;
+    }
+
+    .how_work__card {
+        width: auto;
+        padding: 15px;
+    }
+
+    /*------------------- SPRAY PAGE END--------------------*/
+
+    /*------------ CARTOGRAPHY PAGE -----------*/
+
+    .main__title {
+        line-height: 45px
+    }
+
+    .main__card {
+        width: 100%;
+    }
+
+    .main__list {
+        width: 100%;
+        display: block;
+    }
+
+    .main__item {
+        width: 100%;
+        margin-bottom: 12px;
+        justify-content: flex-start;
+    }
+
+    .process__row {
+        overflow: hidden;
+    }
+
+    .process__img-block {
+        width: 100%;
+        object-fit: fill;
+    }
+
+    .process__desc-content:last-child {
+        left: 0;
+    }
+
+    .help__subtitle {
+        font-size: 18px;
+    }
+
+    /*------------ CARTOGRAPHY PAGE END-----------*/
+}

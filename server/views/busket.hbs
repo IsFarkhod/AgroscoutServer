@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busket</title>
+    <link rel="stylesheet" href="../css/burger.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/busket.css">
+</head>
+<body>
+    <section class="busket">
+        <div class="busket__header">
+            {{#each rows}}
+            <div class="busket__img-block">
+                <img class="busket__img" src="../assets/productionsImage/{{this.imgBusketDrone}}" alt="imgDrone">
+            </div>
+            <div class="busket__descriptions">
+                <div class="busket__header">
+                    <p class="busket__title">{{this.title}}</p>
+                    <p class="busket__price"><span>$</span>{{this.price}}</p>
+                    <p>{{this.busketInstock}}</p>
+                </div>
+                <a class="busket__btn-delete" href="/{{this.id}}">Удалить</a>
+            </div>
+            {{/each}}
+        </div>
+    </section>
+
+
+    <script src="../js/burger.js"></script>
+</body>
+</html>

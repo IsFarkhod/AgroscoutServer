@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #181818F5;
+}
+
+.my-admin {
+    max-width: 1250px;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+.admin-panel {
+    max-width: 1024px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 125px 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.admin-input {
+    width: 250px;
+    height: 55px;
+    font-size: 22px;
+    margin: 12px 0;
+    background-color: rgb(42, 41, 41);
+}
+
+.admin-input input {
+    width: 100%;
+    height: 100%;
+    padding: 12px 15px;
+    color: #fff;
+    border: 2px solid #fff;
+    background-color: #181818F5;
+    outline: none;
+}
+
+.admin-btn {
+    width: 100%;
+    height: 55px;
+    margin: 15px auto;
+    letter-spacing: 2px;
+    color: #fff;
+    font-size: 18px;
+    border: 2px solid #fff;
+    background-color: rgb(42, 41, 41);
+    cursor: pointer;
+}
+
+.main-window {
+    width: 100%;
+    height: 100%;
+    margin: 0 15px;
+    background-color: #494646f5;
+}
+
+.search-block {
+    width: 100%;
+    height: 100%;
+    padding: 8px 12px;
+    background-color: #181818F5;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.searchDrone {
+    width: 100%;
+    height: 50px;
+    background-color: #181818F5;
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    border: none;
+}
+
+.imgSearch {
+    padding: 8px;
+    display: block;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    object-fit: cover;
+    background-color: #181818F5;
+}
+
+table {
+    width: 100%;
+    height: 500px;
+    padding: 18px 15px;
+}
+
+table tr {
+    color: #fff;
+    text-align: center;
+    padding-bottom: 18px;
+
+}
+
+table tr th {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+table tr td {
+    font-size: 18px;
+    padding: 8px 0;
+}
+
+.add-user {
+    padding-top: 125px;
+    padding-left: 230px;
+}

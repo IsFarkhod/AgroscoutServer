@@ -1,0 +1,45 @@
+.burger {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.burger.burger--active {
+    border: 2px solid #02E502;
+}
+
+.burger::before,
+.burger::after {
+    content: '';
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    transition: 0.2s ease-in;
+    position: absolute;
+}
+
+.burger::before {
+    box-shadow: 0 10px 0 #fff;
+    transform: translateY(-10px);
+}
+
+.burger::after {
+    transform: translateY(10px);
+}
+
+.burger.burger--active::before {
+    background-color: #02E502;
+    box-shadow: 0 0 0 #fff;
+    transform: translateY(0) rotate(45deg);
+}
+
+.burger.burger--active::after {
+    background-color: #02E502;
+    transform: translateY(0px) rotate(-45deg);
+}

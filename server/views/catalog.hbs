@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroScout</title>
+    <link rel="stylesheet" href="./css/burger.css">
+    <link rel="stylesheet" href="./css/critical.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/catalog.css">
+</head>
+<body>
+
+    <!-------- PRODUCTION SECTION --------->
+    <section class="production">
+        <div class="container">
+            <div class="general__title-block">
+                <h1 class="general__back-title">Наши предложения</h1>
+                <h4 class="general__front-title">Наша продукция</h4>
+            </div>
+            <div class="production__row">
+                {{#each rows}}
+                <div class="production__card">
+                    <div class="production__header-img">
+                        <img class="production__img" src="../assets/productionsImage/{{this.imgDrone}}"
+                            alt="${element.imgAlt}" />
+                    </div>
+                    <ul class="production__menu">
+                        <li class="production__item">
+                            <h4 class="production__card-title">{{this.title}}</h4>
+                        </li>
+                        <li class="production__item">
+                            <span class="production__card-subtitle">Брэнд:</span>
+                            <p>{{this.brand}}</p>
+                        </li>
+                        <li class="production__item">
+                            <span class="production__card-subtitle">Модель:</span>
+                            <p>{{this.model}}</p>
+                        </li>
+                        <li class="production__item">
+                            <p class="production__price">{{this.price}}</p>
+                        </li>
+                        <form method="post" action="/busket">
+                            <input type="hidden" name="id" value="{{this.id}}">
+                            <input type="hidden" name="imgBusket" value="{{this.imgDrone}}">
+                            <input type="hidden" name="titleBusket" value="{{this.title}}">
+                            <input type="hidden" name="priceBusket" value="{{this.price}}">
+                            <input type="hidden" name="quantity" value="{{this.instock}}">
+                            <input class="general__btn" type="submit" value="Добавить в корзинку">
+                        </form>
+                    </ul>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </section>
+    <!-------- PRODUCTION SECTION END--------->
+
+
+
+    <!-- <section class="catalog">
+        <div class="container">
+            <div class="general__links-crumbs">
+                <a class="general__link-crumb" href="index.html">Главная</a>
+                <span class="general__slash">/</span>
+                <a class="general__link-crumb" href="entomophages.html">Новости</a>
+            </div>
+            <div class="general__title-block">
+                <h1 class="general__back-title">Наши предложения</h1>
+                <h4 class="general__front-title">Каталог продукции</h4>
+            </div>
+        </div>
+        <div class="container">
+            <div class="catalog__row">
+                <div class="catalog__block">
+                    {{#each rows}}
+                    <div class="production__card">
+                        <div class="production__header-img">
+                            <img class="production__img" name="imgBusket" src="../assets/productionsImage/{{this.imgDrone}}"
+                                alt="${element.imgAlt}" />
+                        </div>
+                        <ul class="production__menu">
+                            <li class="production__item">
+                                <h4 class="production__card-title">{{this.title}}</h4>
+                            </li>
+                            <li class="production__item">
+                                <span class="production__card-subtitle" name="titleBusket">Брэнд:</span>
+                                <p>{{this.brand}}</p>
+                            </li>
+                            <li class="production__item">
+                                <span class="production__card-subtitle">Модель:</span>
+                                <p>{{this.model}}</p>
+                            </li>
+                            <li class="production__item">
+                                <p class="production__price" name="priceBusket">${{this.price}}</p>
+                            </li>
+                            <p class="general__btn" onclick="addCardToBox({{this.id}})">Добавить в корзину</p>
+                        </ul>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+
+
+    <!--SCRIPT FOR BURGER MENU-->
+    <script src="./js/burger.js"></script>
+</body>
+</html>

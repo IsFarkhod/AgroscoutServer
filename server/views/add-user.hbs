@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="../css/critical.css">
+    <link rel="stylesheet" href="../css/add-user.css">
+</head>
+<body>
+
+    <section class="add-user">
+        <div class="general__links-crumbs">
+            <a class="general__link-crumb" href="/admin">Главная</a>
+            <span class="general__slash">/</span>
+            <a class="general__link-crumb" href="/add-user">Добавить дрон</a>
+        </div>
+    </section>
+    {{#if alert}}
+    <div class="alert">
+        <h3 class="alert-title">{{alert}}</h3>
+        <button class="alert-close">Закрыть</button>
+    </div>
+    {{/if}}
+
+    <div class="main__block">
+        <div class="add-drone__block">
+            <form action="/add-drone" method="POST" novalidate>
+                <div class="add-drone__input-block">
+                    <div class="add-drone__inputs">
+                        <div class="add-drone__input-box"><input class="add-drone__input" name="titleDrone" type="text"
+                                placeholder="Название"></div>
+                        <div class="add-drone__input-box"><input class="add-drone__input" name="brandDrone" type="text"
+                                placeholder="Брэнд"></div>
+                        <div class="add-drone__input-box"><input class="add-drone__input" name="modelDrone" type="text"
+                                placeholder="Модель"></div>
+                        <div class="add-drone__input-box"><input class="add-drone__input" name="instockDrone"
+                                type="text" placeholder="Количество"></div>
+                        <div class="add-drone__input-box"><input class="add-drone__input" name="priceDrone" type="text"
+                                placeholder="Цена"></div>
+                    </div>
+                    <div class="add-user__input-box">
+                        <input class="add-drone__download-btn" name="imgDrone" type="file">
+                    </div>
+                </div>
+                <div class="admin-btn-block"><button class="add-drone__btn" type="submit">Отправить</button></div>
+            </form>
+        </div>
+    </div>
+
+    {{{body}}}
+    <script>
+        const closeBtn = document.querySelector(".alert-close")
+        const alertWindow = document.querySelector(".alert")
+
+        closeBtn.addEventListener('click', () => {
+            alertWindow.style.display = "none";
+        })
+    </script>
+</body>
+</html>
