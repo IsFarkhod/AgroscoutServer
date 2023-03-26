@@ -1,12 +1,12 @@
-FROM nodejs:latest
+FROM nodejs:19-alpine
 
 WORKDIR /app
 
 COPY package.json .
 COPY package-lock.json .
 
-RUN npm ci
+RUN npm install
 
-ENV FASTIFY_ADDRESS 0.0.0.0
+EXPOSE 8080
 
 CMD [ "npm", "start" ]
