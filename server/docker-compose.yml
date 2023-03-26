@@ -1,9 +1,19 @@
 version: '1.0'
 services:
-  api:
+  server:
     build: ./server
     container_name: api-backend
-    ports: 8080
-  volumes:
-    - ./server/app
-    - ./server/node_modules
+    ports: 
+      - '8080:8080'
+    volumes:
+      - ./server:/app
+      - ./server/node_modules
+  db: 
+   image: mysql
+   restart: always
+   environment:
+    MYSQL_DATABASE: agroScoutDB 
+    MYSQL_USER: root
+    MYSQL_PASSWORD: root
+   ports:
+    - 3000:3000
