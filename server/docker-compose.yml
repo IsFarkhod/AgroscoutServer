@@ -6,8 +6,8 @@ services:
     ports: 
       - '8080:8080'
     volumes:
-      - ./server:/app
-      - ./server/node_modules
+      - .:/app
+      - server/node_modules
   db: 
    image: mysql
    restart: always
