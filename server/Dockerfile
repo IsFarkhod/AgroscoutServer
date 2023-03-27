@@ -1,4 +1,4 @@
-FROM nodejs:12
+FROM node:19
 
 WORKDIR /app
 
